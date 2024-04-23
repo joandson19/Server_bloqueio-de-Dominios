@@ -27,7 +27,7 @@ def create_rpz_zone_file(domain_list, output_file, var_domain):
 
 def main(var_domain):
 
-    url = 'https://alagoinhastelecom.com.br/censura/exportar_dominios.php'
+    url = 'https://seudominio.com.br/censura/exportar_dominios.php'
     response = requests.get(url)
 
     if response.status_code == 200:
