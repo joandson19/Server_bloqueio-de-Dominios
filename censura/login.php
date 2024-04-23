@@ -11,9 +11,9 @@
         <h2>Login</h2>
         <form action="autenticar.php" method="post">
             <label for="nome_usuario">Nome de usuário:</label>
-            <input type="text" id="nome_usuario" name="nome_usuario">
+            <input type="text" id="nome_usuario" name="nome_usuario" autocomplete="off">
             <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha">
+            <input type="password" id="senha" name="senha" autocomplete="off">
             <input type="submit" value="Login">
         </form>
     </div>
