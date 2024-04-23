@@ -1,0 +1,25 @@
+body {
+    background-image: url('../img/censurado.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative; /* Tornar o body relativo para posicionar os elementos */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo semi-transparente */
+}
+
+.container {
+    position: relative;
+    z-index: 1; /* Garante que a caixa de inserção de domínios e o botão fiquem acima da camada semi-transparente */
+    margin-top: 50px;
+    display: inline-block;
+    text-align: left;
+}
