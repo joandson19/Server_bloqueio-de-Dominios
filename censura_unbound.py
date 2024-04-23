@@ -21,7 +21,7 @@ def create_unbound_config(domain_list, output_file):
 
 def main():
 
-    url = 'https://alagoinhastelecom.com.br/censura/exportar_dominios.php'
+    url = 'https://seudominio.com.br/censura/exportar_dominios.php'
     response = requests.get(url)
 
     if response.status_code == 200:
