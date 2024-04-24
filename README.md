@@ -46,4 +46,11 @@ nano bd.conf
 # No Unbound ou no Bind
 ## Coloque o arquivo python no seu servidor de dns conforme seja bind9 ou unbound e após crie uma uma rotina na cron para baixar a lista e adicionar a rpz.
 
-
+### Bind9
+```
+mkdir /var/cache/bind/rpz
+mkdir /etc/bind/script
+cd /etc/bind/script
+wget https://raw.githubusercontent.com/joandson19/Server_bloqueio-de-Dominios/main/censura_bind9.py -O censura_bind9.py
+echo "00 00   * * *   root    python3 /etc/bind/scripts/censura_bind9.py anatel.gov.br" >> /etc/crontab
+echo "01 00   * * *   root    systemctl reload bind9" >> /etc/crontab
