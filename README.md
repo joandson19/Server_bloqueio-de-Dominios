@@ -29,6 +29,7 @@ CREATE TABLE IF NOT EXISTS usuarios (
 INSERT INTO usuarios (nome_usuario, senha) VALUES ('seu_nome_usuario_AQUI', 'sua_senha_AQUI');
 ```
 
+## Baixar arquivos e mover para pasta html
 ```
 cd /tmp
 git clone https://github.com/joandson19/Server_bloqueio-de-Dominios
